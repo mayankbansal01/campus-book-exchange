@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Book Exchange</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Campus Book Exchange</h1>
+        <p>Buy, sell and exchange books with students</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+    </nav>
+
+    <main>
+        <h2 id="mainHeading">Welcome to Campus Book Exchange</h2>
+
+        <p>
+            This website helps students find books they need for their studies.
+            Students can also list their old books for other students.
+        </p>
+
+        <button onclick="changeHeading()">Change Heading</button>
+        <button onclick="changeCardColor(this)">Change Color</button>
+
+        <h2>Featured Books</h2>
+
+        <div id="featuredBooks" class="book-container">
+
+            <div class="book-card">
+                <h3>Programming in C</h3>
+                <p>Author: E. Balagurusamy</p>
+                <p>Category: Programming</p>
+                
+            </div>
+
+            <div class="book-card">
+                <h3>Basic Electrical Engineering</h3>
+                <p>Author: V. K. Mehta</p>
+                <p>Category: Engineering</p>
+            </div>
+
+            <div class="book-card">
+                <h3>Engineering Mathematics</h3>
+                <p>Author: B. S. Grewal</p>
+                <p>Category: Mathematics</p>
+            </div>
+
+        </div>
+
+        <button onclick="toggleBooks()">Show or Hide Books</button>
+    </main>
+
+    <footer>
+        <p>Campus Book Exchange - Student Project</p>
+    </footer>
+
+</body>
+</html>
